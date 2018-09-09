@@ -20,6 +20,7 @@
 		46F3FE0221442FBA009F68EA /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3FE0121442FBA009F68EA /* DashboardViewController.swift */; };
 		46F3FE0421443E95009F68EA /* FBEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3FE0321443E95009F68EA /* FBEventsViewController.swift */; };
 		A61551612072685B4C0B1203 /* Pods_fullyfit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8AC666748B892EAA097519 /* Pods_fullyfit.framework */; };
+		B1DDF8802145368900545584 /* master_data_3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1DDF87F2145368900545584 /* master_data_3.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		46F3FE0321443E95009F68EA /* FBEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBEventsViewController.swift; sourceTree = "<group>"; };
 		5DC675EE36ED80FF9023479F /* Pods-fullyfit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fullyfit.release.xcconfig"; path = "Pods/Target Support Files/Pods-fullyfit/Pods-fullyfit.release.xcconfig"; sourceTree = "<group>"; };
 		5F8AC666748B892EAA097519 /* Pods_fullyfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fullyfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DDF87F2145368900545584 /* master_data_3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = master_data_3.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		46F3FDEE21441FFF009F68EA /* fullyfit */ = {
 			isa = PBXGroup;
 			children = (
+				B1DDF87F2145368900545584 /* master_data_3.csv */,
 				46AF0EB321449D4200B71302 /* master_data.csv */,
 				46F3FDEF21441FFF009F68EA /* AppDelegate.swift */,
 				46F3FDF121441FFF009F68EA /* ViewController.swift */,
@@ -143,7 +146,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					46F3FDEB21441FFF009F68EA = {
 						CreatedOnToolsVersion = 9.2;
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46AF0EB421449D4300B71302 /* master_data.csv in Resources */,
+				B1DDF8802145368900545584 /* master_data_3.csv in Resources */,
 				46F3FDFA21441FFF009F68EA /* LaunchScreen.storyboard in Resources */,
 				46F3FDF721441FFF009F68EA /* Assets.xcassets in Resources */,
 				46F3FDF521441FFF009F68EA /* Main.storyboard in Resources */,
@@ -301,6 +305,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -308,6 +313,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -340,6 +346,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/muhammedahmed/hackathon/fullyfit-git/fullyfit/fullyfit/fullyfit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -358,6 +365,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -365,6 +373,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -389,6 +398,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/muhammedahmed/hackathon/fullyfit-git/fullyfit/fullyfit/fullyfit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -410,7 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = v.fullyfit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/CharlieLuo/Documents/Projects/Alive/fullyfit/fullyfit/fullyfit-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/muhammedahmed/hackathon/fullyfit-git/fullyfit/fullyfit/fullyfit-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -432,7 +442,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = v.fullyfit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/CharlieLuo/Documents/Projects/Alive/fullyfit/fullyfit/fullyfit-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/muhammedahmed/hackathon/fullyfit-git/fullyfit/fullyfit/fullyfit-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

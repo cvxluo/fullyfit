@@ -14,15 +14,75 @@ import CSV
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var goalPrediction: UILabel!
+    
     @IBOutlet weak var chart: LineChartView!
     var gl:CAGradientLayer!
     var data: [[String: Double]] = []
+    var predictionData: [[String: Double]] = []
     
     var gradientLayer: CAGradientLayer!
     var imageView : UIImageView!
     
     var offset = 0
     let range = 7
+
+    
+    @IBAction func predictPressed(_ sender: Any) {
+        self.predictionData = []
+        var text = ""
+        let filePath = Bundle.main.url(forResource: "master_data_3", withExtension: "csv")
+        do {
+            text = try String(contentsOf: filePath!)
+        }
+        catch {
+            text = ""
+        }
+        let brokenCSV = csv(data: text)
+        print(brokenCSV)
+        var sample = brokenCSV[brokenCSV.count - 2]
+        print(sample)
+        let true_message = "You're on track to achieve your goal!"
+        let false_message = "You're not on track to achieve your goal"
+        let mins_in_day = Double(sample[1])!
+        let steps_rolling_sum = Double(sample[2])!
+        let duration = Double(sample[3])!
+        goalPrediction.text! = true_message
+        if (duration <= 0.25){
+            if(steps_rolling_sum < 5489){
+                if (mins_in_day<=1176){
+                    goalPrediction.text! = true_message
+                }
+                else{
+                    goalPrediction.text! = false_message
+                    
+                }
+                
+            }
+            else{
+                goalPrediction.text! = true_message
+            }
+        }
+        else{
+            if(steps_rolling_sum <= 10254){
+                if (duration <= 9.25){
+                    goalPrediction.text! = false_message
+
+                }
+                else{
+                    goalPrediction.text! = true_message
+
+                }
+                
+            }
+            else{
+                goalPrediction.text! = true_message
+
+            }
+        }
+        
+        
+    }
     
     
     @IBOutlet weak var offsetLabel: UILabel!
@@ -149,7 +209,7 @@ class ViewController: UIViewController {
             var sum = 0.0
             var row = csv.next()!
             let time = Double(row[0])!.truncatingRemainder(dividingBy: 1440.0)
-            for j in 0...(1440 - 1) {
+            for _ in 0...(1440 - 1) {
                 row = csv.next()!
                 sum += Double(row[2])!
             }
