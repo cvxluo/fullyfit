@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		46AF0EB22144517C00B71302 /* FBSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF0EB12144517C00B71302 /* FBSignInViewController.swift */; };
 		46AF0EB421449D4300B71302 /* master_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 46AF0EB321449D4200B71302 /* master_data.csv */; };
+		46AF0EB62144DA6900B71302 /* Muse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AF0EB52144DA6900B71302 /* Muse.framework */; };
+		46AF0EB82144DA8E00B71302 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AF0EB72144DA8E00B71302 /* libc++.tbd */; };
+		46AF0EBC2144E18C00B71302 /* BrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AF0EBB2144E18C00B71302 /* BrainViewController.swift */; };
 		46F3FDF021441FFF009F68EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3FDEF21441FFF009F68EA /* AppDelegate.swift */; };
 		46F3FDF221441FFF009F68EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3FDF121441FFF009F68EA /* ViewController.swift */; };
 		46F3FDF521441FFF009F68EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F3FDF321441FFF009F68EA /* Main.storyboard */; };
@@ -23,6 +26,10 @@
 		199EA31635D105C505B0CE7F /* Pods-fullyfit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fullyfit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fullyfit/Pods-fullyfit.debug.xcconfig"; sourceTree = "<group>"; };
 		46AF0EB12144517C00B71302 /* FBSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBSignInViewController.swift; sourceTree = "<group>"; };
 		46AF0EB321449D4200B71302 /* master_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = master_data.csv; sourceTree = "<group>"; };
+		46AF0EB52144DA6900B71302 /* Muse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Muse.framework; sourceTree = "<group>"; };
+		46AF0EB72144DA8E00B71302 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		46AF0EBA2144DC9800B71302 /* fullyfit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fullyfit-Bridging-Header.h"; sourceTree = "<group>"; };
+		46AF0EBB2144E18C00B71302 /* BrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainViewController.swift; sourceTree = "<group>"; };
 		46F3FDEC21441FFF009F68EA /* fullyfit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fullyfit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F3FDEF21441FFF009F68EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F3FDF121441FFF009F68EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46AF0EB82144DA8E00B71302 /* libc++.tbd in Frameworks */,
+				46AF0EB62144DA6900B71302 /* Muse.framework in Frameworks */,
 				A61551612072685B4C0B1203 /* Pods_fullyfit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +60,8 @@
 		4618331A0E4192B90BBECFE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46AF0EB72144DA8E00B71302 /* libc++.tbd */,
+				46AF0EB52144DA6900B71302 /* Muse.framework */,
 				5F8AC666748B892EAA097519 /* Pods_fullyfit.framework */,
 			);
 			name = Frameworks;
@@ -84,9 +95,11 @@
 				46AF0EB12144517C00B71302 /* FBSignInViewController.swift */,
 				46F3FE0121442FBA009F68EA /* DashboardViewController.swift */,
 				46F3FDF321441FFF009F68EA /* Main.storyboard */,
+				46AF0EBB2144E18C00B71302 /* BrainViewController.swift */,
 				46F3FDF621441FFF009F68EA /* Assets.xcassets */,
 				46F3FDF821441FFF009F68EA /* LaunchScreen.storyboard */,
 				46F3FDFB21441FFF009F68EA /* Info.plist */,
+				46AF0EBA2144DC9800B71302 /* fullyfit-Bridging-Header.h */,
 			);
 			path = fullyfit;
 			sourceTree = "<group>";
@@ -244,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F3FDF221441FFF009F68EA /* ViewController.swift in Sources */,
+				46AF0EBC2144E18C00B71302 /* BrainViewController.swift in Sources */,
 				46F3FE0221442FBA009F68EA /* DashboardViewController.swift in Sources */,
 				46AF0EB22144517C00B71302 /* FBSignInViewController.swift in Sources */,
 				46F3FDF021441FFF009F68EA /* AppDelegate.swift in Sources */,
@@ -387,10 +401,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2PUCLQGKS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = fullyfit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = v.fullyfit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/CharlieLuo/Documents/Projects/Alive/fullyfit/fullyfit/fullyfit-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,10 +423,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2PUCLQGKS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = fullyfit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = v.fullyfit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/CharlieLuo/Documents/Projects/Alive/fullyfit/fullyfit/fullyfit-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

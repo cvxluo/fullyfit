@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     var data: [[String: Double]] = []
     
     var gradientLayer: CAGradientLayer!
+    var imageView : UIImageView!
     
     var offset = 0
     let range = 7
@@ -40,6 +41,18 @@ class ViewController: UIViewController {
     }
     
     
+    func assignbackground(){
+        let background = UIImage(named: "bg.png")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+    }
     
     
     func updateGraph(){
@@ -71,8 +84,11 @@ class ViewController: UIViewController {
 
         chart.xAxis.axisMinimum = Double(offset)
         chart.xAxis.axisMaximum = Double(range + offset + 1)
+        chart.xAxis.drawGridLinesEnabled = false
+        chart.xAxis.labelTextColor = UIColor.white
         chart.xAxis.labelPosition = XAxis.LabelPosition.bottom
         chart.leftAxis.axisMaximum = Double(27500)
+        chart.leftAxis.labelTextColor = UIColor.white
         chart.rightAxis.drawAxisLineEnabled = false
         chart.rightAxis.drawGridLinesEnabled = false
         chart.rightAxis.drawLabelsEnabled = false
@@ -104,6 +120,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignbackground()
+        offsetLabel.textColor = UIColor.white
         // Do any additional setup after loading the view, typically from a nib.
         self.populateData()
         
