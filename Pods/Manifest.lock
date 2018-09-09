@@ -1,0 +1,45 @@
+PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Charts (3.0.4):
+    - Charts/Core (= 3.0.4)
+  - Charts/Core (3.0.4)
+  - CSV.swift (2.1.0)
+  - FacebookCore (0.3.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.27)
+  - FacebookLogin (0.3.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3)
+    - FBSDKCoreKit (~> 4.27)
+    - FBSDKLoginKit (~> 4.27)
+  - FBSDKCoreKit (4.28.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.28.0):
+    - FBSDKCoreKit
+  - Hero (1.0.0)
+
+DEPENDENCIES:
+  - Charts
+  - CSV.swift
+  - FacebookCore
+  - FacebookLogin
+  - Hero
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Charts: 0705898046257443f0afbbc3179f4b67507b6e48
+  CSV.swift: a24fb11c17875523783fe963592762ff163ef8ea
+  FacebookCore: 3ffa190a3f1f96cec0e44d3fc221bc322c595ffa
+  FacebookLogin: 0af839ea858faef99550d16596b87b4a8e8906e6
+  FBSDKCoreKit: ca961e279113f691fd83dc634c0bbad9d4e3f370
+  FBSDKLoginKit: b077381c27d800f21661757e8140cf2c80a91e4a
+  Hero: 18e7cf8af41c04c8532d1430ac174004a9365c87
+
+PODFILE CHECKSUM: c4ecb9d9bb3d1337a553955d0fbf0ae9c26ef336
+
+COCOAPODS: 1.4.0
